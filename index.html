@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 设置视口，确保响应式设计 -->
+    <title>美滋滋小网站</title> <!-- 网页标题 -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"> <!-- 引入Bootstrap样式 -->
+    <style>
+        body {
+            font-family: 'Arial', sans-serif; /* 设置全局字体 */
+            background-color: #f0f4f8; /* 设置背景颜色 */
+            color: #333; /* 全局文本颜色 */
+        }
+        .bg-primary {
+            background-color: #007bff !important; /* 主要色调设置 */
+        }
+        .bg-primary-dark {
+            background-color: #0056b3; /* 深色背景，用于强调的部分 */
+        }
+        h1, h3 {
+            margin-bottom: 20px; /* 设置标题底部间距 */
+        }
+        .container {
+            margin-top: 20px; /* 设置容器顶部间距 */
+        }
+        .card {
+            border: none; /* 去掉卡片边框 */
+            border-radius: 10px; /* 设置卡片圆角 */
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* 添加阴影效果 */
+            transition: transform 0.3s, box-shadow 0.3s; /* 添加平滑变化效果 */
+        }
+        .card:hover {
+            transform: scale(1.05); /* 鼠标悬停时放大 */
+            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2); /* 增加阴影效果 */
+        }
+        .card img {
+            border-radius: 10px 10px 0 0; /* 设置图片圆角 */
+        }
+        .footer {
+            margin-top: 40px; /* 设置页脚顶部间距 */
+        }
+        .btn-link {
+            color: #fff; /* 按钮链接文字颜色 */
+            text-decoration: underline; /* 添加下划线效果 */
+        }
+        .btn-link:hover {
+            color: #ffd700; /* 鼠标悬停时链接文字颜色 */
+        }
+        .bg-image {
+            background-image: url('your-background-image.jpg'); /* 设置背景图（可选） */
+            background-size: cover; /* 背景图铺满 */
+            background-position: center; /* 居中显示背景图 */
+            padding: 60px 0; /* 设置上下内边距 */
+            border-radius: 10px; /* 圆角处理 */
+            color: white; /* 背景图中文字颜色 */
+        }
+        .highlight {
+            color: #ffd700; /* 突出文本颜色 */
+        }
+        @media (max-width: 576px) {
+            .footer {
+                margin-top: 20px; /* 小屏幕时调整页脚间距 */
+            }
+        }
+    </style>
+</head>
+<body>
+
+<!-- 顶部区域 -->
+<div class="container-fluid p-5 bg-primary text-white text-center">
+    <h1>美滋滋小网站</h1> <!-- 网站主标题 -->
+    <p class="highlight">作者是傻逼</p> <!-- 网站副标题，使用高亮色 -->
+</div>
+
+<!-- 内容区 -->
+<div class="container mt-5">
+    <div class="row">
+        <div class="col-sm-4 mb-4"> <!-- 第一列 -->
+            <div class="card">
+                <h3 class="highlight">人口贩卖</h3> <!-- 小标题 -->
+                <p>马+7</p> <!-- 描述 -->
+                <img src="马+7.jpg" class="card-img-top" alt="马+7图片"> <!-- 图片元素 -->
+                <p class="p-3">马善被人骑，人善马+7！！！迅速购买马+7，现售价只需$1.14514!</p> <!-- 产品描述 -->
+            </div>
+        </div>
+        
+        <div class="col-sm-4 mb-4"> <!-- 第二列 -->
+            <div class="card bg-primary-dark text-white"> <!-- 使用深色背景的卡片 -->
+                <h3>皇帝的新片</h3> <!-- 小标题 -->
+                <a href="https://cornhub.website/" target="_blank" rel="noopener" class="btn btn-link">点击进入学习，高青无马</a> <!-- 链接按钮 -->
+            </div>
+        </div>
+        
+        <div class="col-sm-4 mb-4"> <!-- 第三列 -->
+            <div class="card">
+                <h3 class="highlight">还是玩会Narrow one吧</h3> <!-- 小标题 -->
+                <a href="https://narrow.one/" target="_blank"> <!-- 外部链接 -->
+                    <img src="NarrowOne.jpg" alt="开始游戏" style="max-width:100%;height:auto;"> <!-- 图片元素 -->
+                </a>
+            </div>
+        </div>
+        <div class="col-sm-2 mb-2"> <!-- 第三列 -->
+            <div class="card">
+                <h3 class="highlight">想玩MC吗？</h3> <!-- 小标题 -->
+                <a href="https://eaglercraft.com/" target="_blank"> <!-- 外部链接 -->
+                    <img src="MC.jpg" alt="开始游戏" style="max-width:100%;height:auto;"> <!-- 图片元素 -->
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- 页脚区域 -->
+<div class="container-fluid p-5 bg-primary text-white text-center footer">
+    <h1>美滋滋小网站</h1> <!-- 再次显示网站主标题 -->
+    <p class="highlight">作者是傻逼</p> <!-- 再次显示副标题 -->
+</div>
+
+<!-- 引入JavaScript库 -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script> <!-- jQuery库 -->
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script> <!-- Popper.js库 -->
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script> <!-- Bootstrap JS -->
+</body>
+</html>
